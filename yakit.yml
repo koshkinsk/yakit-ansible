@@ -1,0 +1,16 @@
+- hosts: server
+  sudo: true
+  vars:
+    - domain: "example.com"
+    - download_url: "http://wordpress.org/latest.tar.gz"
+    - wpdirectory: "/var/www"
+    - db_name: "wordpress"
+    - db_user: "wordpress"
+    - db_password: "wordpress"
+  roles:
+#    - kit
+#    - nginx
+#    - mysql
+    - php5
+#    - wordpress
+   

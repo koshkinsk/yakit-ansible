@@ -1,0 +1,11 @@
+- name: install mysql server
+  apt: pkg={{ item }}
+  with_items:
+    - mysql-server
+    - mysql-client
+    - python-mysqldb
+
+# name: change root pass
+- mysql_user: name=root password=dbpass
+  ignore_errors: yes
+    

@@ -1,0 +1,8 @@
+# Install packages
+- name: installing tools
+  apt: pkg={{ item }}
+  with_items:
+    - zsh
+    - vim
+    - tmux
+
