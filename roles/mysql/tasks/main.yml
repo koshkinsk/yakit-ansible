@@ -6,6 +6,6 @@
     - python-mysqldb
 
 # name: change root pass
-- mysql_user: name=root password=dbpass
+- mysql_user: name=root password={{mysql_root_password}}
   ignore_errors: yes
     
